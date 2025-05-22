@@ -57,7 +57,7 @@ nav,
 p,
 section,
 article {
-    margin: 0px;
+    margin: 20px 10px 0 0;
     padding: 0px;
 
 }
@@ -106,4 +106,8 @@ h1 {
 
 .hero article p {
     margin: 10px;
+}
+
+section img {
+    margin-top: 10px;
 }
