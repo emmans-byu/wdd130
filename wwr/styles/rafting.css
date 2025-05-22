@@ -14,7 +14,6 @@
 }
 
 header {
-    background-color: var(--accent-1);
     color: var(--primary-color);
 }
 
@@ -58,8 +57,8 @@ nav,
 p,
 section,
 article {
-    margin: 16px;
-    padding: 8px;
+    margin: 0px;
+    padding: 0px;
 
 }
 
@@ -83,17 +82,18 @@ h1 {
     width: 100%;
     padding: 16px;
     text-align: center;
+    opacity: 0.8;
     background-color: var(--accent-2);
     color: var(--primary-color);
 }
 
 .hero article {
     position: absolute;
-    top: 90px;
+    top: 100px;
     width: 95%;
     margin-left: 20px;
     padding: 0;
-    opacity: 1;
+    opacity: 0.8;
     background-color: var(--accent-1);
     color: var(--primary-color);
 }
@@ -102,4 +102,8 @@ h1 {
     float: right;
     width: 125px;
     margin: 10px 10px;
+}
+
+.hero article p {
+    margin: 10px;
 }
