@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Paul Makumbi">
+  <title>Adventure Trips | White Water Rafting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+  <meta name="description" content="Explore exciting adventure trips with White Water Rafting - rafting, climbing, and camping packages for all skill levels.">
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+  <header>
+      <img src="images/raftingcompas.jpg" alt="Rafting Company Logo">
+      <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="trips.html">Trips</a>
+          <a href="contact.html">Contact Us</a>
+      </nav>
+  </header>
+
+
+  <main>
+    <section class="villian">
+      <img src="images/happyclients.jpg" alt="Group enjoying yandys rafting travel" width="1200" height="400">
+      <div class="villian-content">
+        <h1>Adventure Awaits!</h1>
+        <p>Book your next outdoor adventure with our expert guides</p>
+      </div>
+    </section>
+
+    <section class="activities">
+      <h2>Our Adventure Activities</h2>
+      <div class="activity-grid">
+        <article class="activity-card">
+          <img src="images/climbing.jpeg" alt="People rock climbing on a cliff" width="300" height="200">
+          <div class="activity-content">
+            <h3>Rock Climbing</h3>
+            <p>Experience thrilling vertical adventures with our certified climbing guides. Suitable for beginners to advanced climbers.</p>
+            <ul class="activity-features">
+              <li>All equipment provided</li>
+              <li>Half-day and full-day options</li>
+              <li>Multiple difficulty levels</li>
+            </ul>
+            <a href="#rock-climbing-details" class="btn-learn-more">Learn More</a>
+          </div>
+        </article>
+
+        <article class="activity-card">
+          <img src="images/run.jpeg" alt="Exciting white water rafting in river rapids" width="300" height="200">
+          <div class="activity-content">
+            <h3>River Rafting</h3>
+            <p>Navigate exciting rapids with our professional rafting teams. Choose from mild to wild adventures.</p>
+            <ul class="activity-features">
+              <li>Class I-V rapids available</li>
+              <li>Family-friendly options</li>
+              <li>Overnight expedition trips</li>
+            </ul>
+            <a href="#" class="btn-learn-more">Learn More</a>
+          </div>
+        </article>
+
+        <article class="activity-card">
+          <img src="images/float.jpeg" alt="Tents set up for riverside camping" width="300" height="200">
+          <div class="activity-content">
+            <h3>Riverside Camping</h3>
+            <p>Relax and unwind with our comfortable camping packages along scenic river locations.</p>
+            <ul class="activity-features">
+              <li>Fully equipped campsites</li>
+              <li>Guided nature walks</li>
+              <li>Campfire meals included</li>
+            </ul>
+            <a href="#camping-details" class="btn-learn-more">Learn More</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="trip-booking">
+      <h2>Ready for Adventure?</h2>
+      <div class="booking-container">
+        <div class="booking-info">
+          <p>Have questions or ready to book your trip? Our adventure specialists are here to help!</p>
+          <a href="contact.html" class="btn-primary">Contact Our Team</a>
+        </div>
+        <div class="booking-form">
+          <h3>Quick Inquiry</h3>
+          <form action="trip-inquiry.html" method="post">
+            <div class="form-group">
+              <label for="trip-interest">I'm interested in:</label>
+              <select id="trip-interest" name="trip_interest" required>
+                <option value="">Select an activity</option>
+                <option value="rafting">White Water Rafting</option>
+                <option value="climbing">Rock Climbing</option>
+                <option value="camping">Riverside Camping</option>
+                <option value="combo">Combo Package</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="participants">Number of Participants:</label>
+              <input type="number" id="participants" name="participants" min="1" max="20" required>
+            </div>
+            <button type="submit" class="btn-submit">Get Trip Details</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="trip-table-section">
+      <h2>Available Trips</h2>
+      <div class="table-container">
+        <table class="trip-table">
+          <caption>Our current adventure trip offerings and availability</caption>
+          <thead>
+            <tr>
+              <th scope="col">Trip Name</th>
+              <th scope="col">Duration</th>
+              <th scope="col">Difficulty</th>
+              <th scope="col">Price (per person)</th>
+              <th scope="col">Availability</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Beginner Rafting</th>
+              <td>1 Day</td>
+              <td>Easy (Class I-II)</td>
+              <td>$120</td>
+              <td>Daily</td>
+              <td><a href="book.html?trip=beginner" class="btn-book">Book Now</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Advanced Rafting</th>
+              <td>2 Days</td>
+              <td>Challenging (Class IV-V)</td>
+              <td>$250</td>
+              <td>Weekends</td>
+              <td><a href="book.html?trip=advanced" class="btn-book">Book Now</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Rock Climbing</th>
+              <td>1 Day</td>
+              <td>Beginner to Advanced</td>
+              <td>$150</td>
+              <td>Daily</td>
+              <td><a href="book.html?trip=climbing" class="btn-book">Book Now</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Wilderness Camping</th>
+              <td>3 Days</td>
+              <td>Moderate</td>
+              <td>$300</td>
+              <td>Friday-Sunday</td>
+              <td><a href="book.html?trip=camping" class="btn-book">Book Now</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Adventure Combo</th>
+              <td>3 Days</td>
+              <td>Varied</td>
+              <td>$450</td>
+              <td>Seasonal</td>
+              <td><a href="book.html?trip=combo" class="btn-book">Book Now</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;2025 | Yandys Rafting Travel | Emmanuel Mansaray</p>
+    <nav class="socialmedia">
+        <a href="www.instagram.com"><img src="images/insta.webp" alt="instagram Logo"></a>
+        <a href="www.facebook.com"><img src="images/facebook.webp" alt="Facebook Logo"></a>
+        <a href="www.x.com"><img src="images/x.webp" alt="X Logo"></a>
+    </nav>
+  </footer>
+</body>
+
+</html>
